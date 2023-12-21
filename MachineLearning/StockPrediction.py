@@ -40,7 +40,7 @@ X_test, y_test = test.drop(['Volume','Low','High','Close','Date'],axis=1), test[
 
 model=LinearRegression()
 model.fit(X_train, y_train)
-joblib.dump(model,'StockPredictor1.joblib')
+# joblib.dump(model,'AMZN.joblib')
 score = model.score(X_test, y_test)
 
 print(score*100)

@@ -1,8 +1,10 @@
 .navbar{
     width: 100%;
     border:2px solid black;
-    background: rgb(40,40,40);
-    background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(13,13,59,1) 19%, rgba(19,47,119,1) 29%, rgba(14,57,122,1) 51%, rgba(19,47,119,1) 71%, rgba(13,13,71,1) 80%, rgba(40,40,40,1) 100%);
+    background: rgb(1,231,137);
+background: linear-gradient(338deg, rgba(1,231,137,1) 0%, rgba(34,193,195,1) 100%);
+
+    border-bottom: solid black 10px;
 }
 
 h1{
@@ -10,7 +12,6 @@ h1{
     font-family:Arial, Helvetica, sans-serif;
     text-align: left;
     font-weight: bold;
-    cursor: pointer;
     /* border: solid white 2px; */
     color: #fff;
     justify-self: start;
@@ -19,6 +20,8 @@ h1{
     align-items: center;
     margin-left: 100px;
     margin-top: 16px;
+    
+  
     
    
 }

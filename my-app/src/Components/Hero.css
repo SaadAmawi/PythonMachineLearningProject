@@ -1,0 +1,33 @@
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.hero-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+object-fit: contain;   
+}
+
+.hero-container > h1 {
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+
+  }
+  
+  .hero-container>p{margin-top: 0px;
+    color: #000000;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}

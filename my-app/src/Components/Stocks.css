@@ -1,0 +1,14 @@
+.tradingview-widget-container{
+    display:block;
+    height: 600px !important;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131722;
+    height: 800px;
+    
+}

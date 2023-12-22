@@ -58,6 +58,7 @@ h1{
     display: flex;
     cursor: pointer;
     border:transparent 6px solid;
+    background-color: transparent;
     
   }
 

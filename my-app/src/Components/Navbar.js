@@ -1,8 +1,6 @@
-// import React,{useState, useEffect} from 'react'
-// import { Link } from 'react-router-dom'
-// import { Button } from './Button';
+
 import './Navbar.css';
-// import './Button.css';
+
 
 
 
@@ -17,23 +15,23 @@ function Navbar() {
         
         <h1 className="logo">
             <i class="fa-solid fa-arrow-trend-up"></i> 
-            &nbsp;Stockz</h1>
+            &nbsp;Stock-z</h1>
 
         <ul className="nav-menu">
         <li className="nav-item">
-        <a to="/" className="nav-links"> 
+        <button to="/Home.js" className="nav-links"> 
         Home
-        </a>
+        </button>
         </li>
         <li className="nav-item">
-        <a to="/" className="nav-links"> 
+        <button to="/Home.js" className="nav-links"> 
         Watchlist
-        </a>
+        </button>
         </li>
         <li className="nav-item">
-        <a to="/" className="nav-links"> 
+        <button to="/Home.js" className="nav-links"> 
         PricePredictor
-        </a>
+        </button>
         </li>
         </ul>
 

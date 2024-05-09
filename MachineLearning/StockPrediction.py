@@ -8,9 +8,11 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 import joblib
 
-stock_name=input()
-stock_data = pd.read_csv(f'{stock_name}.csv')
+# stock_name=input()
+# stock_data = pd.read_csv(f'{stock_name}.csv')
+stock_data = pd.read_csv('GOOGLE2004.csv')
 stock_data=stock_data.drop(['Adj Close'],axis=1)
+
 # for i in range(1, 6):  
 #     stock_data[f'Low_Lag_{i}'] = stock_data['Low'].shift(i)
 
@@ -45,6 +47,8 @@ score = model.score(X_test, y_test)
 
 print(score*100)
 
+model = model.predict([[142.13,2023,12,22]])
+print(model)
 
 # from sklearn.ensemble import RandomForestRegressor
 # regressor = RandomForestRegressor(n_estimators=500, random_state=0)

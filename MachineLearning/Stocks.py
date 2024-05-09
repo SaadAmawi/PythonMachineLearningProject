@@ -46,15 +46,15 @@ score = model.score(X_test, y_test)
 print(score*100)
 
 
-# from sklearn.ensemble import RandomForestRegressor
-# regressor = RandomForestRegressor(n_estimators=500, random_state=0)
-# regressor.fit(X_train, y_train)
-# score = regressor.score(X_test,y_test)
-# print(score)
+from sklearn.ensemble import RandomForestRegressor
+regressor = RandomForestRegressor(n_estimators=500, random_state=0)
+regressor.fit(X_train, y_train)
+score = regressor.score(X_test,y_test)
+print(score*100)
 
-# y_pred= model.predict(X_test)
-# # print(y_pred)
-# print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
+y_pred= model.predict(X_test)
+print(y_pred)
+print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
 
 
 # plt.scatter(stock_data['Date'],stock_data['Low'])

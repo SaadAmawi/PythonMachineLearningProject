@@ -81,14 +81,12 @@ print("Predicted class using RandomForestClassifier:", predictClass(predicted_cl
 
 
 
-knn_model = KNeighborsClassifier(n_neighbors=5)  # You can adjust the number of neighbors (k) as needed
+knn_model = KNeighborsClassifier(n_neighbors=5)  
 knn_model.fit(X_train, y_train)
 
-# Evaluate the model
 accuracy = knn_model.score(X_test, y_test)
 print("Accuracy of KNN:", accuracy * 100)
 
-# Predict the class for a new data point
 new_data_point = np.array([1, 66, 12, 20]).reshape(1, -1)
 predicted_class = knn_model.predict(new_data_point)
 print("Predicted class using KNN:", predictClass(predicted_class))
